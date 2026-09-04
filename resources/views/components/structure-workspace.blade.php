@@ -1,0 +1,2 @@
+@props(['title','action'])
+<div class="grid gap-6 xl:grid-cols-[.7fr_1.3fr]"><form method="POST" action="{{ $action }}" class="space-y-3 rounded-2xl bg-white p-6 shadow-sm">@csrf<h3 class="font-extrabold">{{ $title }}</h3>{{ $form }}<button class="w-full rounded-xl bg-[#06322C] py-3 font-bold text-white">Save</button></form><div class="grid content-start gap-3 sm:grid-cols-2">{{ $items }}</div></div>

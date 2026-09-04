@@ -1,0 +1,2 @@
+@props(['title','action'])
+<form method="POST" action="{{$action}}" class="space-y-3 rounded-2xl bg-white p-5 shadow-sm">@csrf<h2 class="font-bold text-slate-800">{{$title}}</h2><div class="space-y-3 [&_input]:w-full [&_input]:rounded-xl [&_input]:border-slate-200 [&_select]:w-full [&_select]:rounded-xl [&_select]:border-slate-200">{{$slot}}</div><button class="rounded-xl bg-emerald-700 px-4 py-2 text-sm font-bold text-white">Save</button></form>
